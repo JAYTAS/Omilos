@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>Jaytas.Omilos.Web.Service.Subscription</AssemblyName>
+    <RootNamespace>Jaytas.Omilos.Web.Service.Subscription</RootNamespace>
+    <UserSecretsId>cc41a8d2-5850-4be2-ae7b-ac3c700ec6fd</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Jaytas\System\Source\Jaytas.Omilos\Web.Service.Subscription\Jaytas.Omilos.Web.Service.Subscription.xml</DocumentationFile>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Jaytas\System\Source\Jaytas.Omilos\Web.Service.Subscription\Jaytas.Omilos.Web.Service.Subscription.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.1.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Configuration\Configuration.csproj" />
+    <ProjectReference Include="..\Data\Data.csproj" />
+    <ProjectReference Include="..\Security\Security.csproj" />
+    <ProjectReference Include="..\ServiceClient\ServiceClient.csproj" />
+    <ProjectReference Include="..\Web.Service.Models\Web.Service.Models.csproj" />
+    <ProjectReference Include="..\Web\Web.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>Jaytas.Omilos.ServiceClient</AssemblyName>
+    <RootNamespace>Jaytas.Omilos.ServiceClient</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="4.6.48" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Security\Security.csproj" />
+    <ProjectReference Include="..\Web.Service.Models\Web.Service.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Subscription\Models\" />
+  </ItemGroup>
+
+</Project>
